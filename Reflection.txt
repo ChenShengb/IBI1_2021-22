@@ -1,11 +1,6 @@
-# Third note on 7/1/21, yes! I can make changes in both directions!!
+I think mabye the tasks in this practical a bit excessive. It takes me a whole night and afternoon to solve all tasks. Thanks to Doc.Wang, I have 
+solve them. Also I have learned a lot form the practical and get a insight into the usage and language of git and github. It would be better if 
+I can not only get information from protocal, but heve some instruction video which could be more intuitionistic and more easier to find out which 
+part I do not understand or do not know how to do it.
+Last, I feel pretty good to learn a new computer language, I believe it is of great value
 
-# Second note from 7/1/21, I managed to get changes on the ZJE server onto GitHub but can I make changes on the website and send them back?
-
-# Note from 7/1/21, I have cloned this repo onto the ZJE server and am now going to attempt to push it back onto GitHub.
-
-This is an example file for reflection in IBI1_2019-20.
-
-During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
-
-I have also learnt to write careful instructions when communicating online!
