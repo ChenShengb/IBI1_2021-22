@@ -4,4 +4,8 @@ c=271
 d=b-c
 e=a-b
 print(d,e)
-(4218249, 15026781)
+x=1
+y=2
+w=bool("x" and "y")
+print(w)
+ 
