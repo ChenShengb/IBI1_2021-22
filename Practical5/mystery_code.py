@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:randomly generates a number between 1 to 99
+# Answer:randomly generates a random  number between 1 to 99
 
 # Import libraries
 # randint allows drawing a random number,
