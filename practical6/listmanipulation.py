@@ -3,7 +3,7 @@ sorted(marks) # returns sorted marks
 marks=sorted(marks) # chenge the list to the sorted marks
 print(marks) # show the sorted marks
 sum = 0
-for i in range(len(marks)):
+for i in range(len(marks)):  #get Rob's average score 
  sum += marks[i]
 b= sum/len(marks)
 print('the average mark is', b)
