@@ -1,0 +1,6 @@
+question: what is the total cases and total deathes obvr time in Canda?
+the code starts: line 56
+discussion: The plot is similiar to the plot in the practical that the
+ total cases insreased slowly at first then insreasing rapidly to make the 
+plot look loke indexgrowth as I expected. And to the total death, at first, 
+there was no death and there the total deaths were slowly increasing. 
