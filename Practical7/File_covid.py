@@ -51,3 +51,25 @@ plt.plot(china_dates,china_new_death,'r+',label='new deaths')
 plt.xticks(china_dates.iloc[0:len(china_dates):6],rotation=-20) #can see the date more clearly
 plt.legend()
 plt.show()
+# draw the total number of deaths and cases in Canda
+my_g=[]
+for x in range(7996):
+    if covid_data.iloc[x,1]=="Canada":
+        my_g.append(True)
+    else:
+        my_g.append(False)
+print(covid_data.loc[my_g,"total_cases"])
+Canda_new_data= covid_data.iloc[1284:1376,[0,4,5]]
+total_cases=Canda_new_data.iloc[0: ,1]  #set the number of total cases
+total_deaths=Canda_new_data.iloc[0: ,2] # set the number of total death
+# plot the total number of deaths and cases in Canda
+plt.ylabel('number')
+plt.xlabel('date')
+plt.title('comparing total cases and total deaths in Canda')
+Canda_dates=Canda_new_data.iloc[0: ,0]
+plt.plot(Canda_dates,total_cases,label='total cases')
+plt.plot(Canda_dates,total_deaths,label='total deaths')
+plt.xticks(Canda_dates.iloc[0:len(china_dates):6],rotation=-20)
+plt.legend()
+plt.show()
+
