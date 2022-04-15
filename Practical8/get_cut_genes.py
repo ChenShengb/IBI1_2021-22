@@ -21,7 +21,8 @@ with open('/Users/yefen/IBI1_2021-22/Practical8/Saccharomyces_cerevisiae.R64-1-1
                 if gene[i:i + 6] == EcoRI:
                     judge = False #Exit loop if find the sequence
                     name = gene_name[order-2]
-                    a=str(name[0:8])+'     '  #all gene name have 7 characters
+                    d= re.findall(r'gene:(\S+)',name) #identify the gene name
+                    a=str(d)+'      '
                     b=str(len(gene))+'\n'
                     c=(gene)+'\n'
                     line1=a
