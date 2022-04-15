@@ -23,7 +23,8 @@ with open('/Users/yefen/IBI1_2021-22/Practical8/Saccharomyces_cerevisiae.R64-1-1
                    count=count+1 #count the number of fragments
             if count!=0:
                 name = gene_name[order-2]
-                a=str(name[0:8])+'     '  #all gene name have 7 characters
+                d= re.findall(r'gene:(\S+)',name)
+                a=str(d)+'      '
                 b=str(count)+'\n'
                 c=(gene)+'\n'
                 line1=a
