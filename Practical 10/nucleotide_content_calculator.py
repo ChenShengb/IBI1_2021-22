@@ -12,6 +12,11 @@ def percentage_of_nucleotides (i):
     print("the percentage of C is", count_c / count)
     count_G = res.count('G')
     print("the percentage of G is", count_G/ count)
-i='GattccGGGAAATTTCcattttg'       #a example
+
 i=input()
 percentage_of_nucleotides (i)
+# I use'ATTccg' for example. The results were 
+# the percentage of A is 0.16666666666666666
+# the percentage of T is 0.3333333333333333
+# the percentage of C is 0.3333333333333333
+# the percentage of G is 0.16666666666666666
