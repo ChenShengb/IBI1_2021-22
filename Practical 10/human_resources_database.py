@@ -1,6 +1,6 @@
 # this scripts used class that I learned from the Tuesday class, aslo I have got some hlep from my classmate Xu Ziyi
 class Staff:
-   def _init_(self, first_name, last_name, location, role):
+   def __init__(self, first_name, last_name, location, role):
       self.first_name=first_name
       self.last_name=last_name
       self.location=location
