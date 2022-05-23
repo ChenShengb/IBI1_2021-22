@@ -6,5 +6,5 @@ while active:  #set while-loop to increase until p>=64
         n = n+1 
         print(n,p) #print slices for each number of straight cuts
     else:
-        print("the enough pieces is", n+1) #print final correct answer
+        print("the enough pieces is", n) #print final correct answer
         active = False
