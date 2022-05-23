@@ -13,6 +13,11 @@ Max = max(List)
 print("the max is:", Max)
 x=1 #set variables
 y=2
+if x>y:
+	print('the value of x is biiger than y')
+else:
+	print("the value of x is smaller than y")
 w=bool("x" and "y")
 print(w) 
  
+
