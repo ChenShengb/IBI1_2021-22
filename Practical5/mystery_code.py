@@ -15,4 +15,4 @@ while progress<10:
 	progress+=1
 	n = randint(1,100)
 
-print(n)
+print('the last value is', n)
