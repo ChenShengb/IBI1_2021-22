@@ -8,9 +8,10 @@ def find_parents(node_id, parent_ids):
         for immediate_parent_id in immediate_parent_ids:
             parent_ids.add(immediate_parent_id)
             find_parents(immediate_parent_id, parent_ids)
-
+# prase the xml
 nodes = xml.dom.minidom.parse("/Users/yefen/IBI1_2021-22/Practical14/go_obo.xml").documentElement.getElementsByTagName("term")
 print("There are", len(nodes), "terms in go_obo.xml")
+# read is_a, ids and terms related to 'translation'
 node_map = {}
 result = {}
 resu = []
@@ -27,9 +28,8 @@ for node in nodes:
     else:
         judge.append(0)
     result[node_id] = 0
-
+#count the childnotes of terms and subtract a subset of duplicates
 for key in node_map.keys():
-
     parent_ids = set()
     find_parents(key, parent_ids)
     for parent_id in parent_ids:
@@ -39,7 +39,7 @@ for i, (k, v) in enumerate(result.items()):
     resu.append(v)
     if judge[i]==1:
         pic.append(v)
-
+#draw the boxplot of all terms and terms related to translation
 plt.boxplot(result.values(), vert=True, whis=1.5, patch_artist=True, showbox=True, showcaps=True, showfliers=True)
 plt.title('Distribution of child node number of all GO terms')
 plt.xlabel("all GO terms")
@@ -50,7 +50,7 @@ plt.title('Distribution of child node number of terms associated with ‘transla
 plt.xlabel("associated with ‘translation’")
 plt.ylabel("Number")
 plt.show()
-
+#compare the average
 if mean(pic)<mean(resu):
 	print("the translation terms contain, on average, a smaller number of child nodes than the overall Gene Ontology")
 elif mean(pic)>mean(resu):
