@@ -1,6 +1,0 @@
-I think mabye the tasks in this practical a bit excessive. It takes me a whole night and afternoon to solve all tasks. Thanks to Doc.Wang, I have 
-solve them. Also I have learned a lot form the practical and get a insight into the usage and language of git and github. It would be better if 
-I can not only get information from protocal, but heve some instruction video which could be more intuitionistic and more easier to find out which 
-part I do not understand or do not know how to do it.
-Last, I feel pretty good to learn a new computer language, I believe it is of great value
-
